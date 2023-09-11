@@ -36,8 +36,8 @@ $(document).ready(function () {
       }
     }
   }
-
-  let interval = setInterval(hourUpdate, 15000);
+  hourUpdate()
+  setInterval(hourUpdate, 15000);
 
   //Remember calendar entries
   $("#hour-9 .description").val(localStorage.getItem("hour-9"))
